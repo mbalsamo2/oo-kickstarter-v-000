@@ -5,4 +5,6 @@ attr_accessor :name, :backed_projects
     @name = name
     @backed_projects = []
   end
+
+
 end
