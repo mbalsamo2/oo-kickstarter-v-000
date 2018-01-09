@@ -7,8 +7,8 @@ attr_accessor :name, :backed_projects
   end
 
   def back_project(project)
-    @backed_projects << project
-    project.backer = self unless project.backer == self
+    self.backed_projects << project
+    project.backer << self unless project.backer == self
   end
 
 end
